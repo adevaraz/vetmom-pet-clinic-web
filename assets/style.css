@@ -18,23 +18,36 @@ h3 {
     color: #F95742ff;
 }
 
+/**********************HEADER**********************/
+
 header {
     display: inline;
+    position: sticky;
+    top: 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
 }
 
 .jumbotron {
+    flex-basis: 60%;
     font-size: 18px;
     background-color: white;
-    text-align: center;
-    color: #202020;
     padding: 5px;
 }
 
 nav {
+    flex-basis: 40%;
     background-color: white;
     padding: 5px;
-    position: sticky;
-    top: 0;
 }
 
 nav a {
@@ -47,11 +60,16 @@ nav a {
 nav a:hover {
     font-weight: bold;
     background-color: #e9e9e9;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 25px;
+}
+
+nav a:active {
+    color: white;
+    background-color: #F95742ff;
 }
 
 nav li {
@@ -59,6 +77,8 @@ nav li {
     list-style-type: none;
     margin-right: 20px;
 }
+
+/**********************CONTENT**********************/
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -71,38 +91,27 @@ main {
     overflow: auto;
 }
 
-#content {
-    float: left;
-    width: 75%;
-}
-
 .card {
     padding: 20px;
     margin-top: 20px;
 }
 
-aside {
-    float: right;
-    width: 25%;
-    padding-left: 20px;
+#content {
+    text-align: center;
 }
 
+/* beranda */
+
+/**********************BIODATA**********************/
 .profile header {
     text-align: center;
 }
 
+/**********************FOOTER**********************/
 footer {
     padding: 25px;
     color: white;
     background-color: #F95742ff;
     text-align: center;
     font-weight: bold;
-}
-
-@media screen and (max-width: 1000px) {
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
-    }
 }
