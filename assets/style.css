@@ -1,11 +1,108 @@
+/* CSS HEX
+--orange-soda: #F95742ff;
+--white: #FFFFFFff;
+--honey-yellow: #FEB101ff;
+--gray-x-11-gray: #BBB5B5ff;
+--cinereous: #9E8A89ff; */
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap');
 
-body {
-    font-family: 'Open Sans', sans-serif;
+* {
+    box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Archivo', sans-serif;
+    color: #F95742ff;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 18px;
+    background-color: white;
+    text-align: center;
+    color: #202020;
+    padding: 5px;
+}
+
+nav {
+    background-color: white;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #202020;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: #e9e9e9;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.card {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+footer {
+    padding: 25px;
+    color: white;
+    background-color: #F95742ff;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
 }
