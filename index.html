@@ -16,7 +16,7 @@
                     <nav>
                         <ul>
                             <li><a href="#beranda">Beranda</a></li>
-                            <li><a href="#jam-operasional">Jam Operasional</a></li>
+                            <li><a href="#waktu-operasional">Jam Operasional</a></li>
                             <li><a href="#layanan">Layanan</a></li>
                             <li><a href="#kontak">Kontak</a></li>
                         </ul>
@@ -27,36 +27,50 @@
             <main>
                 <div id="content">
                     <article id="beranda" class="card">
+                        <img src="assets/img/vet.jpg" alt="vet">
                         <p>VetMom Pet Clinic adalah klinik hewan yang berada di Antapani, Bandung</p>
                     </article>
 
-                    <article id="jam-operasional" class="card">
-                        <h2>Jam Operasional</h2>
-                        <p>10:00 WIB s/d 14:00 WIB</p>
+                    <article id="waktu-operasional" class="card">
+                        <h2>Waktu Operasional</h2>
+                        <p>Selasa - Sabtu<br>10:00 - 14:00 WIB</p>
                     </article>
 
                     <article id="layanan" class="card">
                         <h2>Layanan</h2>
-                        <table>
-                            <tr>
-                                <td>Periksa dan pengobatan</td>
-                                <td>Vaksinasi</td>
-                                <td>Rawat inap</td>
-                                <td>Operasi</td>
-                            </tr>
-                        </table>
+                        <div class="flex-row">
+                            <div class="square">
+                                <img src="assets/img/stethoscope.png" class="image" alt="stethoscope">
+                                <img src="assets/img/medicine.png" class="image" alt="medicine">
+                                <p>Periksa dan pengobatan</p>
+                            </div>
+                            <div class="square">
+                                <img src="assets/img/sringe.png" class="image" alt="sringe">
+                                <p>Vaksinasi</p>
+                            </div>
+                            <div class="square">
+                                <img src="assets/img/cage.png" class="image" alt="cage">
+                                <p>Rawat inap</p>
+                            </div>
+                            <div class="square">
+                                <img src="assets/img/band-aid.png" class="image" alt="band aid">
+                                <p>Operasi</p>
+                            </div>
+                        </div>
                     </article>
                     
                     <article id="kontak" class="card">
                         <h2>Kontak</h2>
-                        <table class="flex-row">
-                            <tr>
-                                <th>WhatsApp</th>
-                                <td>+62 812-2159-2342</td>
-                                <th>Instagram</th>
-                                <td>@siti.maryani.581</td>
-                            </tr>
-                        </table>
+                        <div class="flex-row">
+                            <div id="whatsapp-num" class="square double">
+                                <img src="assets/img/whatsapp-logo.png" width="50px" alt="whatsapp logo">
+                                <p>+62 812-2159-2342</p>
+                            </div>
+                            <div id="instagram-acc" class="square double">
+                                <img src="assets/img/insta-logo.png" width="50px" alt="instagram logo">
+                                <p>@siti.maryani.581</p>
+                            </div>
+                        </div>
                     </article>
                 </div>
 
@@ -69,20 +83,20 @@
                         </header>
                         <section>
                             <h3>Zara Veda</h3>
-                            <table>
-                                <tr>
-                                    <th>Domisili</th>
-                                    <td>Bandung, Indonesia</td>
-                                </tr>
-                                <tr>
-                                    <th>Nomor Telepon</th>
-                                    <td>+62 822-1795-6801</td>
-                                </tr>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>zaraveda.zv@gmail.com</td>
-                                </tr>
-                            </table>
+                            <div class="flex-column">
+                                <div class="square">
+                                    <p>Domisili</p>
+                                    <p>Bandung, Indonesia</p>
+                                </div>
+                                <div class="square">
+                                    <p>Nomor Telepon</p>
+                                    <p>+62 822-1795-6801</p>
+                                </div>
+                                <div class="square">
+                                    <p>Email</p>
+                                    <p>zaraveda.zv@gmail.com</p>
+                                </div>
+                            </div>
                         </section>
                     </article>
                 </aside>

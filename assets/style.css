@@ -80,6 +80,10 @@ nav li {
 
 /**********************CONTENT**********************/
 
+#content {
+    text-align: center;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -96,11 +100,31 @@ main {
     margin-top: 20px;
 }
 
-#content {
-    text-align: center;
+.square {
+    flex-basis: 25%;
+
+    padding: 10px;
+    /* border: 1px solid #202020; */
+    cursor: pointer;
 }
 
-/* beranda */
+.double {
+    flex-basis: 50%;
+}
+
+/* Beranda */
+#beranda img {
+    max-width: 500px;
+}
+
+/* Layanan */
+.image {
+    max-height: 80px;
+    object-position: center;
+}
+
+/* Contact */
+#whatsapp-num
 
 /**********************BIODATA**********************/
 .profile header {
@@ -109,7 +133,7 @@ main {
 
 /**********************FOOTER**********************/
 footer {
-    padding: 25px;
+    padding: 10px;
     color: white;
     background-color: #F95742ff;
     text-align: center;
