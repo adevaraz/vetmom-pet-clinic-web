@@ -52,7 +52,6 @@ nav {
 
 nav a {
     font-size: 16px;
-    font-weight: 400;
     text-decoration: none;
     color: #202020;
 }
@@ -123,12 +122,28 @@ main {
     object-position: center;
 }
 
-/* Contact */
-#whatsapp-num
+/* Kontak */
 
 /**********************BIODATA**********************/
-.profile header {
+aside {
+    
+}
+
+#profile {
+    max-width: 450px;
+
+    box-shadow: 0 5px 5px 1px #505050;
+    border-radius: 10px;
+}
+
+#profile header {
     text-align: center;
+}
+
+#profile img {
+    border-radius: 50%;
+    max-width: 120px;
+    object-position: center;
 }
 
 /**********************FOOTER**********************/
@@ -138,4 +153,16 @@ footer {
     background-color: #F95742ff;
     text-align: center;
     font-weight: bold;
+}
+
+/**********************SCREEN**********************/
+@media screen and (max-width: 1000px) {
+    #layanan .flex-row,
+    #kontak .flex-row {
+        flex-direction: column;
+    }
+
+    #beranda img {
+        max-width: 300px;
+    }
 }
