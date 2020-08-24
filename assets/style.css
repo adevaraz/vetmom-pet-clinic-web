@@ -117,20 +117,35 @@ main {
 }
 
 /* Layanan */
-.image {
+#layanan img {
     max-height: 80px;
     object-position: center;
+}
+
+#layanan .square:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 2px #e7e7e7;
 }
 
 /* Kontak */
 
 /**********************BIODATA**********************/
 aside {
-    
+    min-width: 350px;
+    max-width: 500px;
+    margin: auto;
+    width: 50%;
+}
+
+#profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px 4px #cfcfcf;
 }
 
 #profile {
-    box-shadow: 0 5px 5px 1px #505050;
+    box-shadow: 0 4px 4px 2px #e7e7e7;
     border-radius: 10px;
 }
 
@@ -161,6 +176,6 @@ footer {
     }
 
     #beranda img {
-        max-width: 300px;
+        max-width: 400px;
     }
 }
