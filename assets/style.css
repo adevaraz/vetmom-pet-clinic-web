@@ -21,9 +21,12 @@ h3 {
 /**********************HEADER**********************/
 
 header {
+    max-height: 80px;
     display: inline;
     position: sticky;
     top: 0;
+
+    box-shadow: 0 2px 4px 0px #e7e7e7;
 }
 
 .flex-column {
@@ -38,13 +41,16 @@ header {
 }
 
 .jumbotron {
+    max-height: 70px;
     flex-basis: 60%;
     font-size: 18px;
     background-color: white;
     padding: 5px;
+    margin-left: 15px;
 }
 
 nav {
+    max-height: 70px;
     flex-basis: 40%;
     background-color: white;
     padding: 5px;
@@ -169,7 +175,17 @@ footer {
 }
 
 /**********************SCREEN**********************/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 580px) {
+    header {
+        box-shadow: 0 2px 4px 2px #e7e7e7 !important;
+        max-height: 80px !important;
+    }
+
+    .jumbotron,
+    nav {
+        max-height: 70px !important;
+    }
+
     #layanan .flex-row,
     #kontak .flex-row {
         flex-direction: column;
