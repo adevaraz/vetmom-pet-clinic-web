@@ -63,7 +63,6 @@ nav a {
 }
 
 nav a:hover {
-    font-weight: bold;
     background-color: #e9e9e9;
     padding-left: 10px;
     padding-right: 10px;
@@ -136,6 +135,25 @@ main {
 }
 
 /* Kontak */
+#kontak a {
+    text-decoration: none;
+    color: #202020;
+    text-align: center;
+}
+
+#kontak a p:hover {
+    background-color: #e9e9e9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    margin: auto;
+    width: 30%;
+}
+
+#kontak a p:active {
+    color: white;
+    background-color: #F95742ff;
+}
 
 /**********************BIODATA**********************/
 aside {
@@ -178,12 +196,20 @@ footer {
 @media screen and (max-width: 580px) {
     header {
         box-shadow: 0 2px 4px 2px #e7e7e7 !important;
-        max-height: 80px !important;
+        max-height: 200px !important;
+    }
+
+    header .flex-row {
+        flex-direction: column;
     }
 
     .jumbotron,
     nav {
-        max-height: 70px !important;
+        max-height: 190px !important;
+    }
+
+    .jumbotron {
+        text-align: center;
     }
 
     #layanan .flex-row,
@@ -192,6 +218,6 @@ footer {
     }
 
     #beranda img {
-        max-width: 400px;
+        max-width: 300px;
     }
 }
